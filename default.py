@@ -15,7 +15,7 @@ st.set_page_config(page_title="RAG Multi-Agent Assistant")
 st.title("🤗 RAG-Powered Multi-Agent Q&A Assistant")
 
 VECTORSTORE_PATH = "vectorstore.pkl"
-DOCS_FOLDER = "/home/shadow-monarch/Documents/Jupyter/Intern_project/documents"
+DOCS_FOLDER = "documents"
 embedding_model = "sentence-transformers/paraphrase-MiniLM-L3-v2"
 QA_MODEL_NAME = "valhalla/t5-base-qa-qg-hl"
 
