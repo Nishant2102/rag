@@ -36,7 +36,7 @@ def get_vectorstore():
     documents = load_documents_from_folder(DOCS_FOLDER)
     splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=100)
     chunks = splitter.split_documents(documents)
-    embeddings = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL)
+    embeddings = HuggingFaceEmbeddings(model_name=embedding_model)
     vectorstore = FAISS.from_documents(chunks, embeddings)
     with open(VECTORSTORE_PATH, "wb") as f:
         pickle.dump(vectorstore, f)
