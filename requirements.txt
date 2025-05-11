@@ -1,7 +1,7 @@
 streamlit
 langchain
-langchain_community
 openai
+langchain_community
 faiss-cpu
 tiktoken
 pypdf
@@ -9,7 +9,7 @@ python-docx
 beautifulsoup4
 html2text
 sentence-transformers
-transformers
+transformers>=4.30.0
 torch
 numpy
 python-dotenv
