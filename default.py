@@ -1,5 +1,3 @@
-# rag_assistant.py
-
 import os
 import re
 import pickle
@@ -70,7 +68,7 @@ def use_calculator(query):
         return f"Error evaluating: {expr} — {e}"
 
 def define_term(term):
-    return f"Definition of '{term}' (stubbed): [Use a dictionary API here]"
+    return f"Definition of '{term}' (stubbed): [Later on I have to add a dictionary API here]"
 
 def answer_with_qa_pipeline(query, retriever):
     docs = retriever.get_relevant_documents(query)
